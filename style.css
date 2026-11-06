@@ -1,0 +1,288 @@
+*{
+    margin: 0;
+    box-sizing: border-box;
+
+}
+.navbaar{
+    height: 60px;
+    background-color: #0f1111;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+}
+/* box 1 */
+.nav-logo{
+    height: 50px;
+    width: 150px;
+}
+.logo{
+    background-image: url(shopmart_logo_white.png);
+    width: 100%;
+    height: 100%;
+    background-size: cover;
+    background-color: #0f1111;
+
+}
+.border{
+    border: 1.5px solid transparent;
+}
+.border:hover{
+    border: 1px solid white;
+}
+/* box 2 */
+.nav-address{
+     order: 2;
+    display: none;   /* "Deliver to India" chhupa do bahut chhoti screen pe */
+}
+.Deliver{
+    color: #CCCCCC;
+    margin-left: 20px;
+
+}
+.India-add{
+    color: #FFFFFF;
+    margin-left: 3px;
+
+}
+.add-icon{
+    display: flex;
+    align-items: center;
+}
+/* box 3 */
+
+.nav-search{
+    display: flex;
+    width: 620px;
+    height: 40px;
+    border-top-left-radius: 6px;
+    border-bottom-left-radius: 6px;
+    background-color: pink;
+    justify-content: space-evenly;
+    border: none;
+}
+.nav-search:hover{
+    border: 2px solid yellow;
+}
+.all{
+    height: 40px;
+   background-color: #f3f3f3;
+   border-top-left-radius: 6px;
+   border-bottom-left-radius: 6px;
+   border: none;
+   
+}
+.search-input{
+    width: 100%;
+    font-size: 1rem;
+    border: none;
+}
+.search-icon{
+    height: 40px;
+    width: 45px;
+    border: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #febd68;
+}
+.language{
+    display: flex;
+}
+.language-2{
+    background-color: #CCCCCC;
+}
+.drowpdown{
+    display: none;
+    position: absolute;
+}
+.account-menu:hover .drowpdown{
+    display: block;
+
+}
+.account-menu a {
+    text-decoration: none;
+    color: white;
+}
+.drowpdown{
+    background-color: #F2F2ED;
+    
+}
+.drowpdown a{
+    color: black;
+    font-family: 'Courier New', Courier, monospace;
+}
+.account-menu:hover{
+    color: rgba(125, 50, 10, 0);
+    font-size: larger;
+}
+.cart i {
+    font-size: 25px;
+    margin-right: 0px;
+}
+.nav-2{
+    background-color: #222F3D;
+    height: 40px;
+    width: 100%;
+    color: white;
+    display: flex;
+    align-items: center;
+    /* justify-content: space-evenly; */
+
+}
+a{
+    margin: 5px;
+    padding: 8px;
+}
+.image{
+    height: 100%;
+    width: 390px;
+    background-image: url(images-shoping.jpg);
+    background-color: #222F3D;
+    background-size:   cover;
+    background-position: center;
+    align-item: right;
+}
+.image:hover{
+    height: 100px;
+    background-size: contain;
+}
+.main-page{
+    height: 400px;
+    width: 100%;
+    background-image: url(image-4000.jpg);
+    background-size: contain;
+    background-color: #222F3D;
+    background-position: center;
+}
+@media (max-width: 768px) {
+  .navbaar {
+    flex-wrap: wrap;
+    height: auto;
+    padding: 8px 0;
+  }
+
+  .nav-search {
+    width: 90%;
+    order: 5;
+    margin: 8px auto;
+  }
+  .account-menu, .returns-order, .cart {
+    font-size: 12px;
+  }
+
+  .nav-2 {
+    flex-wrap: wrap;
+    height: auto;
+    padding: 6px 0;
+  }
+
+  .nav-2 a, .nav-2 span {
+    font-size: 12px;
+    padding: 4px;
+  }
+
+  .image {
+    display: none;   /* chhoti screen pe ye banner hata do, jagah bachao */
+  }
+
+  .main-page {
+    height: auto;
+    min-height: 200px;
+    background-size: cover;
+  }
+}
+
+@media (max-width: 480px) {
+  .nav-logo {
+    width: 100px;
+  }
+
+  .nav-search {
+    width: 95%;
+  }
+}
+.customer{
+    text-decoration: none;
+    color: #f3f3f3;
+    
+}
+.deals-container{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 15px;
+    width: 100%;
+    height: auto;
+    /* background-color: rgb(233, 238, 245); */
+    padding: -10px;
+    margin-top: 7px;
+}
+.deal-box{
+    background-color: #FFFFFF;
+    width: 320px;
+    height: 426px;
+    border: 0.05px solid rgb(82, 77, 77);
+    box-shadow: 0 0 2 2px rgba(0, 0, 0, 0, 2);
+    align-items: center;
+    border-radius: 20px;
+    padding: 20px 0px 15px;
+}
+
+.hero-msg{
+    margin-left: 100px;
+    margin-top: -50px;
+    background-color: #FFFFFF;
+    height: 30px;
+    width: 1200px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.box-img{
+    height: 300px;
+    background-size: cover;
+}
+.box-content{
+    margin-left: 1rem;
+    margin-right: 1rem;
+}
+.footer{
+    height: 300px;
+    width: 100%;background-color: #222F3D;
+}
+.back{
+    width: 100%;
+    height: 40px;
+    background-color: #31475d;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 10px;
+
+}
+#computer{
+    background-size: contain;
+}
+#auto{
+    background-size: contain;
+}
+.footer{
+    color: white;
+    display: flex;
+    justify-content: space-evenly;
+    }
+ul a{
+    display: block;
+    color: #DDDDDD;
+
+}
+.foot3{
+    height: 50px;
+    background-color: #435262;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #febd68;
+}
+
